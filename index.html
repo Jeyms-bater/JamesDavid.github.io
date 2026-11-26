@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Supercar World</title>
+  <meta name="description" content="Explore the world’s most famous supercar brands and the iconic cars that made them legends.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=Jost:wght@300..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top">Supercar <span>World</span></a>
+      <div class="header-actions">
+        <nav class="main-nav" aria-label="Main">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <h1 id="hero-title">Legends of Speed</h1>
+          <p>Explore the world’s most famous supercar brands and the iconic cars that made them legends.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#collection">Explore the collection</a>
+            <a class="btn btn-ghost" href="#about">About us</a>
+          </div>
+        </div>
+        <figure class="stage" aria-label="Featured cars">
+          <div class="stage-frame">
+          <img class="slide" src="images/koenigsegg-jesko.jpg" alt="Koenigsegg Jesko" data-name="Koenigsegg Jesko" data-year="2019" width="1200" height="800">
+          <img class="slide" src="images/lamborghini-revuelto.jpg" alt="Lamborghini Revuelto" data-name="Lamborghini Revuelto" data-year="2023" width="1200" height="800" loading="lazy">
+          <img class="slide" src="images/bugatti-chiron.jpg" alt="Bugatti Chiron" data-name="Bugatti Chiron" data-year="2016" width="1200" height="800" loading="lazy">
+          <img class="slide" src="images/porsche-918-spyder.jpg" alt="Porsche 918 Spyder" data-name="Porsche 918 Spyder" data-year="2013" width="1200" height="800" loading="lazy">
+          <img class="slide" src="images/koenigsegg-regera.jpg" alt="Koenigsegg Regera" data-name="Koenigsegg Regera" data-year="2015" width="1200" height="800" loading="lazy">
+          </div>
+          <figcaption>
+            <span class="stage-name"><span id="stage-name"></span><small id="stage-year"></small></span>
+            <span class="dots"><button class="dot" type="button" aria-label="Show Koenigsegg Jesko"></button><button class="dot" type="button" aria-label="Show Lamborghini Revuelto"></button><button class="dot" type="button" aria-label="Show Bugatti Chiron"></button><button class="dot" type="button" aria-label="Show Porsche 918 Spyder"></button><button class="dot" type="button" aria-label="Show Koenigsegg Regera"></button></span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== About (first section) ===== -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <div class="about-lead">
+          <h2 class="section-title" id="about-title">About us</h2>
+          <p>Supercar World is a tribute to the brands and cars that pushed speed, design and engineering further than anyone thought possible.</p>
+          <dl class="facts">
+            <div><dt>Brands</dt><dd>6</dd></div>
+            <div><dt>Iconic cars</dt><dd>23</dd></div>
+            <div><dt>Passion</dt><dd>Speed</dd></div>
+          </dl>
+        </div>
+        <div class="about-list">
+          <article class="about-item">
+            <h3>Our story</h3>
+            <p>Supercar World began as a simple idea: put the world’s most famous supercar brands in one place, with the legendary models that made each of them famous. From the raw F40 to the modern hybrid hypercars, every car here has a story worth telling.</p>
+          </article>
+          <article class="about-item">
+            <h3>Our mission</h3>
+            <p>To make supercar history easy and fun to explore. Pick a brand, browse its icons, and tap any car to see a closer look with its year and key highlights.</p>
+          </article>
+          <article class="about-item">
+            <h3>What you’ll find</h3>
+            <p>Six legendary makers — Ferrari, Lamborghini, McLaren, Porsche, Bugatti and Koenigsegg — each with its most iconic cars, from classics of the 1980s to today’s hypercars.</p>
+          </article>
+          <article class="about-item">
+            <h3>A quick note</h3>
+            <p>Specs shown on this site are approximate and meant for enjoyment, not as official figures. Car names and brands belong to their respective owners.</p>
+          </article>
+          <article class="about-item">
+            <h3>Made by</h3>
+            <p>This website was designed and built by <span class="gh">Jeyms-bater</span>. Every page here is the creator’s own work, so when you see this name you know you are on the real Supercar World site.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Collection (projects) ===== -->
+    <section class="collection" id="collection" aria-labelledby="collection-title">
+      <div class="wrap">
+        <div class="collection-head">
+          <h2 class="section-title" id="collection-title">The collection</h2>
+          <p>Choose a brand to see its icons. Select any car for a closer look.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filter by brand">
+          <button class="brand-tab" type="button" data-filter="all" aria-pressed="true">
+            <span class="tab-logo tab-all" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="13.5" y="3.5" width="7" height="7" rx="1"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><rect x="13.5" y="13.5" width="7" height="7" rx="1"/></svg></span>
+            <span class="tab-name">All brands</span>
+          </button>
+          <button class="brand-tab" type="button" data-filter="ferrari" aria-pressed="false" style="--c:#dc0000">
+            <span class="tab-logo"><img src="logos/ferrari.png" alt="" width="64" height="64"><span class="tab-initial" aria-hidden="true">F</span></span>
+            <span class="tab-name">Ferrari</span>
+          </button>
+          <button class="brand-tab" type="button" data-filter="lamborghini" aria-pressed="false" style="--c:#ddb321">
+            <span class="tab-logo"><img src="logos/lamborghini.png" alt="" width="64" height="64"><span class="tab-initial" aria-hidden="true">L</span></span>
+            <span class="tab-name">Lamborghini</span>
+          </button>
+          <button class="brand-tab" type="button" data-filter="mclaren" aria-pressed="false" style="--c:#ff8000">
+            <span class="tab-logo"><img src="logos/mclaren.png" alt="" width="64" height="64"><span class="tab-initial" aria-hidden="true">M</span></span>
+            <span class="tab-name">McLaren</span>
+          </button>
+          <button class="brand-tab" type="button" data-filter="porsche" aria-pressed="false" style="--c:#d5001c">
+            <span class="tab-logo"><img src="logos/porsche.png" alt="" width="64" height="64"><span class="tab-initial" aria-hidden="true">P</span></span>
+            <span class="tab-name">Porsche</span>
+          </button>
+          <button class="brand-tab" type="button" data-filter="bugatti" aria-pressed="false" style="--c:#1e5bff">
+            <span class="tab-logo"><img src="logos/bugatti.png" alt="" width="64" height="64"><span class="tab-initial" aria-hidden="true">B</span></span>
+            <span class="tab-name">Bugatti</span>
+          </button>
+          <button class="brand-tab" type="button" data-filter="koenigsegg" aria-pressed="false" style="--c:#00a3a3">
+            <span class="tab-logo"><img src="logos/koenigsegg.png" alt="" width="64" height="64"><span class="tab-initial" aria-hidden="true">K</span></span>
+            <span class="tab-name">Koenigsegg</span>
+          </button>
+        </div>
+        <p class="collection-note">Specs and prices are approximate. Launch prices are converted to US dollars, and market values are typical recent sale ranges that vary with condition and history.</p>
+        <p class="filter-status" id="filter-status" role="status" aria-live="polite"></p>
+
+      <section class="brand" id="ferrari" data-brand="ferrari" style="--c:#dc0000" aria-labelledby="ferrari-title">
+        <header class="brand-intro">
+          <h3 id="ferrari-title">Ferrari</h3>
+          <p>Founded by Enzo Ferrari, Ferrari is famous for its red sports cars, screaming V12 engines and a racing history that runs through Formula 1.</p>
+          <dl class="brand-facts">
+            <div><dt>Country</dt><dd>Italy</dd></div>
+            <div><dt>Founded</dt><dd>1947</dd></div>
+            <div><dt>Base</dt><dd>Maranello</dd></div>
+          </dl>
+        </header>
+        <div class="cars">
+          <article class="car">
+            <figure class="car-photo"><img src="images/ferrari-f40.jpg" alt="Ferrari F40" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Ferrari F40" data-engine="2.9 L twin-turbo V8">F40</h4><span class="car-year">1987</span></div>
+              <p>Twin-turbo V8 with around 471 hp. The last Ferrari Enzo personally oversaw.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>471 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>4.1 s</dd></div>
+                <div><dt>Top speed</dt><dd>324 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$400,000</dd></div>
+                <div><dt>Market today</dt><dd>$2.5M–$4M</dd></div>
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Ferrari F40</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/ferrari-enzo.jpg" alt="Ferrari Enzo" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Ferrari Enzo" data-engine="6.0 L V12">Enzo</h4><span class="car-year">2002</span></div>
+              <p>Named after the founder. V12 with about 651 hp and Formula 1-inspired technology.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>651 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>3.3 s</dd></div>
+                <div><dt>Top speed</dt><dd>350 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$650,000</dd></div>
+                <div><dt>Market today</dt><dd>$3.5M–$4.5M</dd></div>
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Ferrari Enzo</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/ferrari-laferrari.jpg" alt="Ferrari LaFerrari" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Ferrari LaFerrari" data-engine="6.3 L V12 hybrid">LaFerrari</h4><span class="car-year">2013</span></div>
+              <p>Hybrid V12 hypercar producing about 950 hp.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>950 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>under 3.0 s</dd></div>
+                <div><dt>Top speed</dt><dd>350 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$1.4M</dd></div>
+                <div><dt>Market today</dt><dd>$3.5M–$5M</dd></div>
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Ferrari LaFerrari</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/ferrari-sf90-stradale.jpg" alt="Ferrari SF90 Stradale" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Ferrari SF90 Stradale" data-engine="4.0 L twin-turbo V8 hybrid">SF90 Stradale</h4><span class="car-year">2019</span></div>
+              <p>Plug-in hybrid with a V8 and three electric motors, about 986 hp, all-wheel drive.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>986 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>2.5 s</dd></div>
+                <div><dt>Top speed</dt><dd>340 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$510,000</dd></div>
+                
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Ferrari SF90 Stradale</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="brand" id="lamborghini" data-brand="lamborghini" style="--c:#ddb321" aria-labelledby="lamborghini-title">
+        <header class="brand-intro">
+          <h3 id="lamborghini-title">Lamborghini</h3>
+          <p>Founded by Ferruccio Lamborghini, the brand is known for dramatic wedge shapes, a raging-bull badge and car names taken from bullfighting.</p>
+          <dl class="brand-facts">
+            <div><dt>Country</dt><dd>Italy</dd></div>
+            <div><dt>Founded</dt><dd>1963</dd></div>
+            <div><dt>Base</dt><dd>Sant’Agata Bolognese</dd></div>
+          </dl>
+        </header>
+        <div class="cars">
+          <article class="car">
+            <figure class="car-photo"><img src="images/lamborghini-countach.jpg" alt="Lamborghini Countach" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Lamborghini Countach" data-engine="4.0 L V12">Countach</h4><span class="car-year">1974</span></div>
+              <p>The wedge-shaped icon that defined the supercar poster era.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>370 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>5.6 s</dd></div>
+                <div><dt>Top speed</dt><dd>300 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$52,000</dd></div>
+                <div><dt>Market today</dt><dd>$400K–$1.5M</dd></div>
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Lamborghini Countach</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/lamborghini-aventador.jpg" alt="Lamborghini Aventador" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Lamborghini Aventador" data-engine="6.5 L V12">Aventador</h4><span class="car-year">2011</span></div>
+              <p>V12 flagship with a carbon-fiber core.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>691 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>2.9 s</dd></div>
+                <div><dt>Top speed</dt><dd>350 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$400,000</dd></div>
+                
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Lamborghini Aventador</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/lamborghini-hurac-n.jpg" alt="Lamborghini Huracán" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Lamborghini Huracán" data-engine="5.2 L V10">Huracán</h4><span class="car-year">2014</span></div>
+              <p>V10-powered supercar and one of Lamborghini’s best sellers.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>602 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>3.2 s</dd></div>
+                <div><dt>Top speed</dt><dd>325 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$240,000</dd></div>
+                
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Lamborghini Huracán</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/lamborghini-revuelto.jpg" alt="Lamborghini Revuelto" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Lamborghini Revuelto" data-engine="6.5 L V12 hybrid">Revuelto</h4><span class="car-year">2023</span></div>
+              <p>Plug-in hybrid V12 with about 1,000 hp.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>1,001 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>2.5 s</dd></div>
+                <div><dt>Top speed</dt><dd>350+ km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$610,000</dd></div>
+                
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Lamborghini Revuelto</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="brand" id="mclaren" data-brand="mclaren" style="--c:#ff8000" aria-labelledby="mclaren-title">
+        <header class="brand-intro">
+          <h3 id="mclaren-title">McLaren</h3>
+          <p>Born from Bruce McLaren’s racing team, McLaren builds lightweight, track-focused road cars in Woking, England.</p>
+          <dl class="brand-facts">
+            <div><dt>Country</dt><dd>United Kingdom</dd></div>
+            <div><dt>Founded</dt><dd>1963 (racing team)</dd></div>
+            <div><dt>Base</dt><dd>Woking</dd></div>
+          </dl>
+        </header>
+        <div class="cars">
+          <article class="car">
+            <figure class="car-photo"><img src="images/mclaren-f1.jpg" alt="McLaren F1" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="McLaren F1" data-engine="6.1 L BMW V12">F1</h4><span class="car-year">1992</span></div>
+              <p>Central driving seat and a BMW V12. Set a 240 mph production-car record in 1998.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>618 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>3.2 s</dd></div>
+                <div><dt>Top speed</dt><dd>386 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$1M</dd></div>
+                <div><dt>Market today</dt><dd>$20M+</dd></div>
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for McLaren F1</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/mclaren-p1.jpg" alt="McLaren P1" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="McLaren P1" data-engine="3.8 L twin-turbo V8 hybrid">P1</h4><span class="car-year">2013</span></div>
+              <p>Hybrid hypercar with about 903 hp.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>903 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>2.8 s</dd></div>
+                <div><dt>Top speed</dt><dd>350 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$1.15M</dd></div>
+                <div><dt>Market today</dt><dd>$1.5M–$3M</dd></div>
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for McLaren P1</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/mclaren-720s.jpg" alt="McLaren 720S" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="McLaren 720S" data-engine="4.0 L twin-turbo V8">720S</h4><span class="car-year">2017</span></div>
+              <p>Twin-turbo V8 supercar with a carbon-fiber chassis and dramatic aerodynamics.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>700 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>2.9 s</dd></div>
+                <div><dt>Top speed</dt><dd>341 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$285,000</dd></div>
+                
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for McLaren 720S</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/mclaren-senna.jpg" alt="McLaren Senna" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="McLaren Senna" data-engine="4.0 L twin-turbo V8">Senna</h4><span class="car-year">2018</span></div>
+              <p>Track-focused car named after Ayrton Senna, about 789 hp.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>789 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>2.8 s</dd></div>
+                <div><dt>Top speed</dt><dd>335 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$1M</dd></div>
+                <div><dt>Market today</dt><dd>$1.5M–$3M</dd></div>
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for McLaren Senna</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="brand" id="porsche" data-brand="porsche" style="--c:#d5001c" aria-labelledby="porsche-title">
+        <header class="brand-intro">
+          <h3 id="porsche-title">Porsche</h3>
+          <p>Porsche mixes everyday usability with racing success, including many wins at the 24 Hours of Le Mans.</p>
+          <dl class="brand-facts">
+            <div><dt>Country</dt><dd>Germany</dd></div>
+            <div><dt>Founded</dt><dd>1931</dd></div>
+            <div><dt>Base</dt><dd>Stuttgart</dd></div>
+          </dl>
+        </header>
+        <div class="cars">
+          <article class="car">
+            <figure class="car-photo"><img src="images/porsche-911.jpg" alt="Porsche 911" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Porsche 911" data-engine="2.0 L flat-six (original 1964)">911</h4><span class="car-year">1964</span></div>
+              <p>Rear-engined sports car icon that is still being made today.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>128 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>8.3 s</dd></div>
+                <div><dt>Top speed</dt><dd>210 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$6,500</dd></div>
+                <div><dt>Market today</dt><dd>$100K–$300K</dd></div>
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Porsche 911</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/porsche-959.jpg" alt="Porsche 959" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Porsche 959" data-engine="2.8 L twin-turbo flat-six">959</h4><span class="car-year">1986</span></div>
+              <p>Advanced all-wheel-drive twin-turbo car, well ahead of its time.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>444 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>3.7 s</dd></div>
+                <div><dt>Top speed</dt><dd>317 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$225,000</dd></div>
+                <div><dt>Market today</dt><dd>$1.5M–$2.5M</dd></div>
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Porsche 959</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/porsche-carrera-gt.jpg" alt="Porsche Carrera GT" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Porsche Carrera GT" data-engine="5.7 L V10">Carrera GT</h4><span class="car-year">2003</span></div>
+              <p>Naturally aspirated V10 and carbon-fiber construction.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>603 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>3.5 s</dd></div>
+                <div><dt>Top speed</dt><dd>330 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$440,000</dd></div>
+                <div><dt>Market today</dt><dd>$1.2M–$2M</dd></div>
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Porsche Carrera GT</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/porsche-918-spyder.jpg" alt="Porsche 918 Spyder" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Porsche 918 Spyder" data-engine="4.6 L V8 hybrid">918 Spyder</h4><span class="car-year">2013</span></div>
+              <p>Plug-in hybrid hypercar with about 887 hp.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>887 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>2.6 s</dd></div>
+                <div><dt>Top speed</dt><dd>345 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$845,000</dd></div>
+                <div><dt>Market today</dt><dd>$1.7M–$2.5M</dd></div>
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Porsche 918 Spyder</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="brand" id="bugatti" data-brand="bugatti" style="--c:#1e5bff" aria-labelledby="bugatti-title">
+        <header class="brand-intro">
+          <h3 id="bugatti-title">Bugatti</h3>
+          <p>Founded by Ettore Bugatti, the brand stands for extreme speed combined with luxury.</p>
+          <dl class="brand-facts">
+            <div><dt>Country</dt><dd>France</dd></div>
+            <div><dt>Founded</dt><dd>1909</dd></div>
+            <div><dt>Base</dt><dd>Molsheim</dd></div>
+          </dl>
+        </header>
+        <div class="cars">
+          <article class="car">
+            <figure class="car-photo"><img src="images/bugatti-eb110.jpg" alt="Bugatti EB110" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Bugatti EB110" data-engine="3.5 L quad-turbo V12">EB110</h4><span class="car-year">1991</span></div>
+              <p>Quad-turbo V12 supercar from Bugatti’s 1990s revival.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>553 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>3.5 s</dd></div>
+                <div><dt>Top speed</dt><dd>342 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$380,000</dd></div>
+                <div><dt>Market today</dt><dd>$1.5M–$2.5M</dd></div>
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Bugatti EB110</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/bugatti-veyron-16-4.jpg" alt="Bugatti Veyron 16.4" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Bugatti Veyron 16.4" data-engine="8.0 L quad-turbo W16">Veyron 16.4</h4><span class="car-year">2005</span></div>
+              <p>Quad-turbo W16 and among the first production cars to top 400 km/h.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>987 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>2.5 s</dd></div>
+                <div><dt>Top speed</dt><dd>407 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$1.25M</dd></div>
+                <div><dt>Market today</dt><dd>$1.5M–$2.5M</dd></div>
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Bugatti Veyron 16.4</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/bugatti-chiron.jpg" alt="Bugatti Chiron" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Bugatti Chiron" data-engine="8.0 L quad-turbo W16">Chiron</h4><span class="car-year">2016</span></div>
+              <p>Successor to the Veyron and one of the most powerful production cars of its era.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>1,479 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>2.4 s</dd></div>
+                <div><dt>Top speed</dt><dd>420 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$3M</dd></div>
+                
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Bugatti Chiron</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="brand" id="koenigsegg" data-brand="koenigsegg" style="--c:#00a3a3" aria-labelledby="koenigsegg-title">
+        <header class="brand-intro">
+          <h3 id="koenigsegg-title">Koenigsegg</h3>
+          <p>Founded by Christian von Koenigsegg, this small Swedish company is known for extreme, record-chasing hypercars.</p>
+          <dl class="brand-facts">
+            <div><dt>Country</dt><dd>Sweden</dd></div>
+            <div><dt>Founded</dt><dd>1994</dd></div>
+            <div><dt>Base</dt><dd>Ängelholm</dd></div>
+          </dl>
+        </header>
+        <div class="cars">
+          <article class="car">
+            <figure class="car-photo"><img src="images/koenigsegg-ccx.jpg" alt="Koenigsegg CCX" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Koenigsegg CCX" data-engine="4.7 L twin-supercharged V8">CCX</h4><span class="car-year">2006</span></div>
+              <p>Early Koenigsegg hypercar that made the brand famous worldwide.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>806 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>3.2 s</dd></div>
+                <div><dt>Top speed</dt><dd>395 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$545,000</dd></div>
+                
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Koenigsegg CCX</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/koenigsegg-agera-rs.jpg" alt="Koenigsegg Agera RS" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Koenigsegg Agera RS" data-engine="5.0 L twin-turbo V8">Agera RS</h4><span class="car-year">2015</span></div>
+              <p>Set a production-car speed record in 2017.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>1,341 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>2.8 s</dd></div>
+                <div><dt>Top speed</dt><dd>447 km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$2.5M</dd></div>
+                
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Koenigsegg Agera RS</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/koenigsegg-regera.jpg" alt="Koenigsegg Regera" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Koenigsegg Regera" data-engine="5.0 L twin-turbo V8 hybrid">Regera</h4><span class="car-year">2015</span></div>
+              <p>Hybrid with no traditional gearbox.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>1,500 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>2.8 s</dd></div>
+                <div><dt>Top speed</dt><dd>400+ km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$1.9M</dd></div>
+                
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Koenigsegg Regera</span></button>
+            </div>
+          </article>
+          <article class="car">
+            <figure class="car-photo"><img src="images/koenigsegg-jesko.jpg" alt="Koenigsegg Jesko" width="1200" height="800" loading="lazy"></figure>
+            <div class="car-body">
+              <div class="car-head"><h4 data-full="Koenigsegg Jesko" data-engine="5.0 L twin-turbo V8">Jesko</h4><span class="car-year">2019</span></div>
+              <p>Built for record-breaking speed, and stronger still when running on E85 fuel.</p>
+              <dl class="specs">
+                <div><dt>Power</dt><dd>1,600 hp</dd></div>
+                <div><dt>0–100 km/h</dt><dd>2.5 s</dd></div>
+                <div><dt>Top speed</dt><dd>480+ km/h</dd></div>
+              </dl>
+              <dl class="prices">
+                <div><dt>Launch price</dt><dd>$2.8M</dd></div>
+                
+              </dl>
+              <button class="car-more" type="button">View details<span class="visually-hidden"> for Koenigsegg Jesko</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+      </div>
+    </section>
+
+    <!-- ===== Contact (last section) ===== -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div class="contact-lead">
+          <h2 class="section-title" id="contact-title">Contact</h2>
+          <p>Questions, suggestions, or a car we missed? Write or call. Both go straight to the person who built this site.</p>
+        </div>
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:sigekumainmulti@gmail.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">sigekumainmulti@gmail.com</span>
+            <span class="contact-action">Write an email</span>
+          </a>
+          <a class="contact-card" href="tel:09363636363">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">0936 363 6363</span>
+            <span class="contact-action">Call now</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Supercar World. Specs are approximate.</p>
+      <p>Designed and built by Jeyms-bater</p>
+    </div>
+  </footer>
+
+  <!-- ===== Car pop-up ===== -->
+  <dialog class="car-dialog" id="car-dialog" aria-labelledby="dialog-name">
+    <img class="dialog-photo" id="dialog-img" src="" alt="">
+    <div class="dialog-body">
+      <h3 id="dialog-name"></h3>
+      <p class="dialog-meta" id="dialog-meta"></p>
+      <p id="dialog-text"></p>
+      <dl class="dialog-specs" id="dialog-specs"></dl>
+      <dl class="dialog-prices" id="dialog-prices"></dl>
+    </div>
+    <button class="dialog-close" type="button" aria-label="Close">&times;</button>
+  </dialog>
+
+</body>
+</html>
